@@ -1,38 +1,129 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.list-beers {
+  padding: 10px;
+}
+
+.single-beer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.single-beer img {
+  width: 40px;
+}
+
+.single-beer h3 {
+  font-size: 15px;
+}
+
+.single-beer p {
+  font-size: 12px;
+}
+
+.beer-details-1 img {
+  width: 60px;
+}
+
+.beer-details-1 {
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.beer-details-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.beer-details-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.beer-details {
+  padding: 20px;
+}
+
+.beer-details p {
+  margin: 10px 0px;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form label {
+  margin: 10px 0px;
+}
+
+.form form button {
+  margin: 10px 0px;
+  border: none;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.home-page {
+  padding: 20px;
+}
+
+.home-page img {
+  width: 90vw;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.home-page p {
+  margin: 10px 0px;
+}
+
+.header {
+  background-color: aqua;
+  width: 100vw;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-link {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-link:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.beer-link {
+  text-decoration: none;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
